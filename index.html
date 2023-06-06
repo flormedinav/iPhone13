@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Bootstrap: va antes que el nuestro para que priorice el nuestro-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--CSS propio-->
+    <title>iPhone 13</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- <script src="js/unidad7.js"></script> -->
+</head>
+<body>
+    <header>
+        <div id="marca">
+            <img src="multimedia/logo5.png" alt="iPhone 13 Pro">
+        </div>
+        <nav id="botonera_ppal">
+            <ul>
+                <li><a href="#contenido1">Descripción</a></li>
+                <li><a href="#contenido2">Especificaiones</a></li>
+                <li><a href="#contenido3">Accesorios</a></li>
+                <li><a href="#contenido4">Contacto</a></li>
+                <li><a href="#pie1">Redes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido1">
+        <div id="conte1_a">
+            <h1>iPhone 13 Pro</h1>
+            <h2>Muy muy Pro</h2>
+        </div>
+        <div id="conte1_b">
+            <img src="multimedia/imagen1.png" alt="iPhone 13 Pro">
+        </div>
+        <div id="conte1_c">
+            <p>Un sistema de cámaras mucho más poderoso. Una pantalla con respuesta inmediata en cada interacción. El chip de smartphone más rápido del mundo. Un diseño increíblemente resistente. Y un gran salto en duración de batería.
+            Saca tu lado Pro.</p>
+        </div>
+    </section>
+    <section id="contenido2">
+        <h2>Saca tu lado Pro.</h2>
+        <div id="conte2_a">
+            <!-- <script>
+            document.write('<h3>Bienvenido/a: '+ nombreUsuario +'</h3>')
+            document.write('<p>Marca actual: '+marca_ahora+'</p><p>Marca favorita: '+marca_favorita+'</p>')
+            document.write('<p>Fundador de Apple: '+info_apple1+'</p><p>Sistema operativo: '+info_apple2+'</p><p>Líneas que maneja: '+info_apple3+'</p>')
+            </script> -->
+            <div id="conte2_a1">
+               <h3>Colores. Almacenamiento</h3>
+                <img src="multimedia/Colores.png" alt="Cámara">
+                <p><a href="#conte2_a" onclick="mostrarColores(), ocultarImgColores()" class="btn bg_boton2">Más información</a></p>
+            </div> 
+            <div id="conte2_a2" style=display:none>
+                <h4>Colores disponibles</h4>
+                <ul>
+                    <li>Celeste</li>
+                    <li>Gris topo</li>
+                    <li>Crema</li>
+                    <li>Blanco</li>
+                    <li>Verde Militar</li>
+                </ul>
+                <h4>Almacenamiento disponibles</h4>
+                <ul>
+                    <li>128 GB</li>
+                    <li>256 GB</li>
+                    <li>512 GB</li>
+                </ul>
+                <p><a href="#conte2_a" onclick="ocultarColores(), mostrarImgColores()" class="btn bg_boton2">Cerrar</a></p>
+            </div>
+        </div>
+        <div id="conte2_b">
+            <div id="conte2_b1">
+                <h3>Cámara: Tu foto. Tu estilo.</h3>
+                <img src="multimedia/camara.png" alt="Cámara">
+                <p><a href="#conte2_b" onclick="textCamara(), ocultarImg()" class="btn bg_boton2">Más información</a></p> 
+            </div>
+            <div id="conte2_b2" style=display:none>
+                <ul>
+                    <li>Sistema de dos cámaras de 12 MP</li>
+                    <li>Distancia focal de 77 mm</li>
+                    <li>Zoom óptico de 3xi</li>
+                    <li>Lente de 6 elementos</li>
+                </ul>
+                <p>Es perfecta para tomar retratos, lograr fotos más nítidas o grabar videos desde lejos.Para los sujetos que se encuentren más cerca, el modo Retrato es ideal porque te permite ajustar el efecto bokeh y experimentar con efectos de iluminación con calidad de estudio. Deep Fusion analiza cada pixel a partir de múltiples exposiciones.</p>
+                <p><a href="#conte2_b" onclick="cerrarCamara(), mostrarImg()" class="btn bg_boton2">Cerrar</a></p>
+            </div>
+        </div>
+        <div id="conte2_c">
+            <div id="conte2_c1">
+                <h3>Pantalla</h3>
+                <img src="multimedia/foto2.png" alt="Pantalla">
+                <p><a href="#conte2_c" onclick="textPantalla(), ocultarImgPantalla()" class="btn bg_boton2">Más información</a></p> 
+            </div>
+            <div id="conte2_c2" style=display:none>
+                <ul>
+                    <li>Pantalla Super Retina XDR</li>
+                    <li>Pantalla OLED de 5.4 pulgadas (diagonal) sin marco</li>
+                    <li>Resolución de 2340 x 1080 pixeles a 476 ppi</li>
+                </ul>
+                <p>La pantalla del iPhone 13 mini tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 5.42 pulgadas en diagonal (el área real de visualización es menor).</p>
+                <p><a href="#conte2_c" onclick="ocultarInfoPantalla(), textPantallaGrand()" class="btn bg_boton2">Siguiente</a></p>  
+            </div>
+            <div id="conte2_c3" style=display:none>
+                <ul>
+                    <li>Pantalla Super Retina XDR</li>
+                    <li>Pantalla OLED de 6.1 pulgadas (diagonal) sin marco</li>
+                    <li>Resolución de 2532 x 1170 pixeles a 460 ppi</li>
+                </ul>
+                <p>La pantalla del iPhone 13 tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 6.06 pulgadas en diagonal (el área real de visualización es menor).</p>
+                <p><a href="#conte2_c" onclick="ocultarInfoPantallaGrand(), mostrarPantalla()" class="btn bg_boton2">Cerrar</a></p>
+            </div>
+        </div>
+        <div id="conte2_d">
+            <div id="conte2_d1">
+                <h3>Chip. Precio</h3>
+                <img src="multimedia/chip.png" alt="Chip">
+                <p><a href="#conte2_d" onclick="mostrarInfoChip(), ocultarImgChip()" class="btn bg_boton2">Más información</a></p> 
+            </div>
+            <div id="conte2_d2" style=display:none>
+                <ul>
+                    <li>Chip A15 Bionic</li>
+                    <li>CPU de 6 núcleos con 2 núcleos de rendimeinto y 4 de eficiencia</li>
+                    <li>GPU de 5 núcleos</li>
+                    <li>Neural Engine de 16 núcleos</li>
+                </ul>
+                <p>Nuevos núcleos de eficiencia y rendimiento del CPU para completar tareas complejas y ahorrar batería. GPU de 5 núcleos completamente nuevo con un rendimiento gráfico más rápido para disfrutar juegos inmersivos, funcionalidades avanzadas de la cámara y mucho más.</p>
+                <p id="precio">Precio: <strong>USD $971</strong></p>
+                <p><a href="#conte2_d" onclick="ocultarInfoChip(), mostrarImgChip()" class="btn bg_boton2">Cerrar</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="contenido3">
+        <h2>Descubre qué le puedes sumar.</h2>
+        <!--Inicio Card 1-->
+        <div class="row row-cols-1 row-cols-md-2 px-2">
+            <div class="col">
+              <div class="card bg-card">
+                <img src="multimedia/airpods1.png" class="card-img-top" alt="AirPods">
+                <div class="card-body card-extra">
+                  <h4 class="card-title">AirPods</h4>
+                  <p class="card-text">Los AirPods se conectan fácilmente y te siguen el ritmo todo el día. Disfruta de escuchar música en todo lugares.</p>
+                  <button type="button" class="btn bg_boton" data-bs-toggle="modal" data-bs-target="#exampleModal">Más información</button>
+                </div> 
+              </div>
+            </div>
+            <!--Fin Card-->
+            <!--Inicio Modal 1-->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">AirPods</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <img src="multimedia/airpods4.png" class="img-fluid" alt="airpods">
+          <ul class="lista_modal">
+            <li>Magia amplificada.</li>
+            <li>Con audio espacial para un sonido envolvente.</li>
+            <li>Una batería de mayor duración que se carga a toda velocidad.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg_boton" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!--Fin Modal 1-->
+            <!--Inicio Card 2-->
+            <div class="col">
+                <div class="card bg-card">
+                  <img src="multimedia/maxair2.png" class="card-img-top" alt="AirPodsMax">
+                  <div class="card-body card-extra">
+                    <h4 class="card-title">AirPods Max</h4>
+                    <p class="card-text">Diseñados para lograr un ajuste excepcional y crear un aislamiento acústico que se adapta a la forma de la cabeza.</p>
+                    <button type="button" class="btn bg_boton" data-bs-toggle="modal" data-bs-target="#exampleModa2">Más información</button>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Card-->
+            <!--Fin Modal 2-->
+            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">AirPods Max</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="multimedia/maxair.png" class="img-fluid" alt="airpods">
+                      <ul class="lista_modal">
+                        <li>Magia amplificada.</li>
+                        <li>Audio de alta fidelidad.</li>
+                        <li>Cancelación Activa de Ruido con modo Ambiente.</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg_boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Modal 2-->
+            <!--Inicio Card 3-->
+             <div class="col">
+                <div class="card bg-card">
+                  <img src="multimedia/airtag.png" class="card-img-top" alt="AirTag">
+                  <div class="card-body card-extra">
+                    <h4 class="card-title">AirTag</h4>
+                    <p class="card-text">Pon uno en tus llaves y otro en tu mochila para que siempre puedas ver su ubicación en la App Encontrar.</p>
+                    <button type="button" class="btn bg_boton" data-bs-toggle="modal" data-bs-target="#exampleModa3">Más información</button>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Card-->
+            <!--Inicio Modal 3-->
+            <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">AirTag</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="multimedia/airtag4.jpg" class="img-fluid" alt="airtag">
+                      <ul class="lista_modal">
+                        <li>Pierde la costumbre de perder las cosas.</li>
+                        <li>Escúchalo. Encuéntralo.</li>
+                        <li>Con el Modo Perdido encontrar tus cosas es aún más fácil.</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg_boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Modal 3-->
+            <!--Inicio Card 4-->
+            <div class="col">
+                <div class="card bg-card">
+                  <img src="multimedia/magsafe2.png" class="card-img-top" alt="MagSafe">
+                  <div class="card-body card-extra">
+                    <h4 class="card-title">MagSafe</h4>
+                    <p class="card-text">Súmale una cartera o una funda magnética. O las dos. Y disfruta también de una carga inalámbrica más rápida.</p>
+                    <button type="button" class="btn bg_boton" data-bs-toggle="modal" data-bs-target="#exampleModa4">Más información</button>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Card-->
+            <!--Inicio Modal 4-->
+            <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">AirTag</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="multimedia/magsafe5.jpg" class="img-fluid" alt="magsafe">
+                      <ul class="lista_modal">
+                        <li>Cargador MagSafe.</li>
+                        <li>Cartera de cuero con soporte de búsqueda.</li>
+                        <li>Batería MagSafe.</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg_boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Fin Modal 4-->
+    </section>
+    <section id="contenido4">
+        <h2>Contácta con nosotros.</h2>
+        <div class="conteinaer-fluid px-3">
+            <div class="row gx-3" id="conte4_a">
+                <div class="col-lg" id="conte4_a1">
+                    <h3>¿En qué te podemos ayudar?</h3>
+                    <p class="tex_consulta">Contacta con nostros a través de este formulario y te contestaremos en un plazo máximo de 48 horas.</p>
+                    <form action="#contenido4">
+                        <input type="text" placeholder="Nombre (*)" required maxlength="30" class="form-control"> <!--El id se usa para js y name para php-->
+                        <input type="text" placeholder="Apellido (*)" required maxlength="40" class="form-control">
+                        <input type="email" placeholder="Correo (*)" required maxlength="80" class="form-control">
+                        <textarea cols="30" placeholder="Ingrese su consulta (*)" required class="form-control"></textarea>
+                        <input type="submit" class="btn bg_boton form-control">
+                        <p class="obligatorio">(*) Campos obligatorios.</p>
+                    </form>
+                </div>
+                <div class="col-lg" id="conte4_a2">
+                    <!--Inicio carousel-->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="multimedia/cl4.jpg" class="d-block w-100" alt="ChicaPosando">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="multimedia/carousel1.jpg" class="d-block w-100" alt="PaisajeNocturno">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="multimedia/carousel3.jpg" class="d-block w-100" alt="ChicaPosando">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <!--Fin carousel-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="pie1">
+            <p><a href="https://www.instagram.com/apple/?hl=es-la" target="new">Instagram</a></p>
+            <div id="pie1_a"> 
+                <img src="multimedia/3.png" alt="Instagram">
+            </div>
+        </div>
+        <div id="pie2">
+            <p><a href="https://www.facebook.com/apple/" target="new">Facebook</a></p>
+            <div id="pie2_a">
+                <img src="multimedia/1.png" alt="Facebook">
+            </div>
+        </div>
+        <div id="pie3">
+            <p><a href="https://www.apple.com/" target="new">Sitio Web</a></p>
+            <div id="pie3_a">
+                <img src="multimedia/2.png" alt="">
+            </div>
+        </div>
+        <div id="pie4">
+            <p><a href="https://support.apple.com/es-lamr/contact" target="new">Soporte</a></p>
+            <div id="pie4_a">
+                <img src="multimedia/4.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <!--JS propio-->
+    <script src="js/unidad8.js"></script>
+    <!--JS bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
